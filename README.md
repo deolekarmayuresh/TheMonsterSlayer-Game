@@ -13,4 +13,4 @@ https://deolekarmayuresh.github.io/TheMonsterSlayer-Game/
 ## Directions for playing the game:
 - Use Attack & SpecialAttack buttons for hitting the Monster hard
 - Use Heal button for healing up yourself from the damage given by the Monster
-- Ig you want to give hit on GiveUp button
+- If you want to give-up the game then hit on GiveUp button
