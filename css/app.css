@@ -80,7 +80,7 @@ button {
 }
 
 #specialAttack:hover {
-    background-color: #f07816;
+    background-color: #ff831d;
 }
 
 #heal {
@@ -88,7 +88,7 @@ button {
 }
 
 #heal:hover {
-    background-color: #76ff7e;
+    background-color: #31a038;
 }
 
 #give-up {
@@ -96,5 +96,5 @@ button {
 }
 
 #give-up:hover {
-    background-color: #c7c7c7;
+    background-color: #b6bac0;
 }
