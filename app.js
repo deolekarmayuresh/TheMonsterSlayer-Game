@@ -51,11 +51,11 @@ new Vue({
         monsterAttack: function() {
             let damage = this.calculateDamage(5, 12);
             this.playerHealth -= damage;
+            this.checkWin();
             this.turns.unshift({
                 isPlayer: false,
                 text: "Monster hits the player for" + damage
             });
-            this.checkWin();
         },
         calculateDamage: function (min, max) {
             return Math.max(Math.floor(Math.random() * max) + 1, min);
