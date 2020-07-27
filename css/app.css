@@ -75,12 +75,12 @@ button {
     background-color: #ff3f43;
 }
 
-#special-attack {
-    background-color: #ffaf4f;
+#specialAttack {
+    background-color: #e9ddce;
 }
 
-#special-attack:hover {
-    background-color: #ff9a2b;
+#specialAttack:hover {
+    background-color: #f07816;
 }
 
 #heal {
