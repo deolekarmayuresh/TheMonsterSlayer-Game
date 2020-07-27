@@ -96,8 +96,7 @@ new Vue({
             } else if (this.playerHealth <= 0) {
                 if(confirm("You lost! Start new game?")) {
                     let sound = document.getElementById("lost");
-                    sound.play();
-                    this.startGame();
+                    this.startGame(sound.play());
                     
                 }else {
                     this.gameIsRunning = false;
