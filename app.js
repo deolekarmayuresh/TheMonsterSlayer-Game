@@ -15,6 +15,10 @@ new Vue({
         },
         attack: function() {
             let damage = this.calculateDamage(3, 10);
+
+            let sound = document.getElementById("attacko");
+			sound.play();
+
             this.monsterHealth -= damage;
             this.turns.unshift({
                 isPlayer: true,
@@ -28,7 +32,11 @@ new Vue({
 
         },
         specialAttack: function() {
-            let damage = this.calculateDamage(10, 20)
+            let damage = this.calculateDamage(10, 20);
+
+            let sound = document.getElementById("special");
+			sound.play();
+
             this.monsterHealth -= damage;
             this.turns.unshift({
                 isPlayer: true,
@@ -41,14 +49,18 @@ new Vue({
 
         },
         heal: function() {
+            let sound = document.getElementById("healo");
             if (this.playerHealth <= 90) {
                 this.playerHealth += 10;
+                
+                
             }else {
                 this.playerHealth = 100;
             }
+            sound.play();
             this.turns.unshift({
                 isPlayer: true,
-                text: "Player heals for 10"
+                text: "Player heals for 10",
             });
 
             this.monsterAttack();
@@ -73,14 +85,20 @@ new Vue({
         checkWin: function () {
             if (this.monsterHealth <= 0) {
                 if(confirm("You won! Start new game?")) {
+                    let sound = document.getElementById("win");
                     this.startGame();
+                    sound.play();
                 }else {
                     this.gameIsRunning = false;
                 }
+                
                 return true;
             } else if (this.playerHealth <= 0) {
                 if(confirm("You lost! Start new game?")) {
+                    let sound = document.getElementById("lost");
+                    sound.play();
                     this.startGame();
+                    
                 }else {
                     this.gameIsRunning = false;
                 }
