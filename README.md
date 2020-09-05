@@ -1,4 +1,4 @@
-# The Monster Slayer Game
+# The Monster Slayer Game 👾
 
 ## Tech Stack:
 - HTML
